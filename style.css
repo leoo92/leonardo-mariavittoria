@@ -1,15 +1,15 @@
-
 /* Colori principali */
 :root {
   --verde-chiaro: #9caa99;
   --verde-scuro: #73806f;
   --azzurro-scuro: #8799a7;
   --azzurro-chiaro: #c4d1e2;
+  --bianco-beige: #f5f2ed;
 }
 
-/* Corpo pagina con sfondo azzurro chiaro */
+/* Corpo pagina con sfondo bianco/beige */
 body {
-  background-color: var(--azzurro-chiaro);
+  background-color: var(--bianco-beige);
   color: var(--verde-scuro);
   font-family: Arial, sans-serif;
 }
@@ -39,7 +39,7 @@ nav ul {
 }
 
 nav a {
-  color: var(--c4d1e2);
+  color: var(--bianco-beige);
   text-decoration: none;
   font-weight: bold;
 }
@@ -65,9 +65,9 @@ button:hover, input[type="submit"]:hover {
   color: var(--verde-scuro);
 }
 
-/* Sezioni con sfondo azzurro chiaro e bordi verde chiaro */
+/* Sezioni con sfondo bianco/beige e bordi verde chiaro */
 section {
-  background-color: var(--azzurro-chiaro);
+  background-color: var(--bianco-beige);
   border: 2px solid var(--verde-chiaro);
   margin: 20px auto;
   padding: 20px;
