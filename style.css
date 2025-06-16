@@ -42,7 +42,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #8799a7;    /* azzurro scuro */
-    color: #c5dbbf;              /* bianco/beige provo verde*/
+    color: #9caa99;              /* bianco/beige in verde*/
 }
 
 main {
@@ -81,7 +81,7 @@ input[type="submit"] {
 
 footer {
     text-align: center;
-    background-color: #c5dbbf;    /* verde chiaro chiaro */
+    background-color: #9caa99;    /* verde chiaro*/
     color: #657362;               /* verde scuro modificato */
     padding: 1rem;
     margin-top: 2rem;
