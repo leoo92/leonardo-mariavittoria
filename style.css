@@ -1,14 +1,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f5f2ed;     /* bianco/beige */
-    color: #73806f;                /* verde scuro */
+    color: #657362;                /* verde scuro modificato */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #9caa99;     /* verde chiaro */
-    color: #73806f;                /* verde scuro */
+    background-color: #a3b59e;     /* verde chiaro modificato */
+    color: #657362;                /* verde scuro modificato */
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@ header {
 header h1 {
     font-family: 'Parisienne', cursive;
     font-size: 3rem;
-    color: #73806f;                /* verde scuro */
+    color: #657362;                /* verde scuro modificato */
 }
 
 nav ul {
@@ -33,7 +33,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #73806f;                /* verde scuro */
+    color: #657362;                /* verde scuro modificato */
     font-weight: 600;
     padding: 0.4rem 0.7rem;
     border-radius: 5px;
@@ -53,7 +53,7 @@ main {
 
 h2 {
     font-family: 'Parisienne', cursive;
-    color: #73806f;                /* verde scuro */
+    color: #657362;                /* verde scuro modificato */
     margin-bottom: 1rem;
 }
 
@@ -66,23 +66,9 @@ form {
 
 input[type="text"], input[type="number"] {
     padding: 0.5rem;
-    border: 1px solid #c4d1e2;    /* azzurro chiaro */
+    border: 1px solid #657362;    /* verde scuro modificato */
     border-radius: 5px;
 }
 
 input[type="submit"] {
-    background-color: #8799a7;    /* azzurro scuro */
-    color: #f5f2ed;               /* bianco/beige */
-    border: none;
-    padding: 0.7rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-footer {
-    text-align: center;
-    background-color: #c4d1e2;    /* azzurro chiaro */
-    color: #73806f;               /* verde scuro */
-    padding: 1rem;
-    margin-top: 2rem;
-}
+    background-color: #8799a7;
