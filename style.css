@@ -1,15 +1,15 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f8fbfc;
+    background-color: #8799a7;
     color: #2f3e46;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #e8f5f2;
-    color: #2f3e46;
+    background-color: #9caa99;
+    color: #73806f;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #52796f;
+    color: #73806f;
     font-weight: 600;
     padding: 0.4rem 0.7rem;
     border-radius: 5px;
