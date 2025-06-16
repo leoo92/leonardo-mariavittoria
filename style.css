@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #a3b59e;     /* verde chiaro modificato */
+    background-color: #f5f2ed;     /* verde chiaro modificato provo beige */
     color: #657362;                /* verde scuro modificato */
     padding: 1rem 2rem;
     display: flex;
@@ -42,7 +42,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #8799a7;    /* azzurro scuro */
-    color: #f5f2ed;               /* bianco/beige */
+    color: #c5dbbf;              /* bianco/beige provo verde*/
 }
 
 main {
@@ -71,4 +71,18 @@ input[type="text"], input[type="number"] {
 }
 
 input[type="submit"] {
-    background-color: #8799a7;
+    background-color: #8799a7;    /* azzurro scuro */
+    color: #f5f2ed;               /* bianco/beige */
+    border: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #8799a7;    /* azzurro scuro */
+    color: #657362;               /* verde scuro modificato */
+    padding: 1rem;
+    margin-top: 2rem;
+}
