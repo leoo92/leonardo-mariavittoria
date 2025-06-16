@@ -1,14 +1,14 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #f5f2ed 0%, #e7e4d9 100%); /* sfumatura bianco/beige */
-    color: #657362;                /* verde scuro modificato */
+    background-color: #f0f2f6;      /* azzurro molto chiaro, simile al colore più in basso */
+    color: #62766c;                 /* verde/grigio scuro, simile al colore in alto */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: linear-gradient(135deg, #a3b59e 0%, #88997c 100%); /* verde chiaro sfumato */
-    color: #657362;                /* verde scuro modificato */
+    background: linear-gradient(90deg, #778a7a, #a3b1a0); /* gradiente verde salvia */
+    color: #4c5a52;                /* verde scuro */
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -19,8 +19,8 @@ header {
 header h1 {
     font-family: 'Parisienne', cursive;
     font-size: 3rem;
-    color: #657362;                /* verde scuro modificato */
-    text-shadow: 2px 2px 4px rgba(101, 115, 98, 0.5);
+    color: #4c5a52;                /* verde scuro */
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.6);
 }
 
 nav ul {
@@ -34,17 +34,16 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #657362;                /* verde scuro modificato */
+    color: #62766c;               /* verde/grigio scuro */
     font-weight: 600;
     padding: 0.4rem 0.7rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    text-shadow: 1px 1px 2px rgba(101, 115, 98, 0.3);
 }
 
 nav ul li a:hover {
-    background-color: #8799a7;    /* azzurro scuro */
-    color: #f5f2ed;               /* bianco/beige */
+    background-color: #9ab1be;    /* azzurro medio */
+    color: #f0f2f6;               /* azzurro molto chiaro */
 }
 
 main {
@@ -55,9 +54,9 @@ main {
 
 h2 {
     font-family: 'Parisienne', cursive;
-    color: #657362;                /* verde scuro modificato */
+    color: #4c5a52;               /* verde scuro */
     margin-bottom: 1rem;
-    text-shadow: 1px 1px 3px rgba(101, 115, 98, 0.4);
+    text-shadow: 1px 1px 3px rgba(120, 130, 140, 0.4);
 }
 
 form {
@@ -69,29 +68,24 @@ form {
 
 input[type="text"], input[type="number"] {
     padding: 0.5rem;
-    border: 1px solid #657362;    /* verde scuro modificato */
+    border: 1px solid #62766c;   /* verde/grigio scuro */
     border-radius: 5px;
 }
 
 input[type="submit"] {
-    background-color: #8799a7;    /* azzurro scuro */
-    color: #f5f2ed;               /* bianco/beige */
+    background-color: #9ab1be;    /* azzurro medio */
+    color: #f0f2f6;               /* azzurro molto chiaro */
     border: none;
     padding: 0.7rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #657362;
-    color: #f5f2ed;
+    box-shadow: 0 2px 5px rgba(140, 160, 180, 0.6);
 }
 
 footer {
     text-align: center;
-    background: linear-gradient(135deg, #8799a7 0%, #657362 100%);
-    color: #f5f2ed;               /* bianco/beige */
+    background-color: #9ab1be;    /* azzurro medio */
+    color: #4c5a52;               /* verde scuro */
     padding: 1rem;
     margin-top: 2rem;
 }
