@@ -99,7 +99,7 @@ footer {
     font-size: 0.9rem;
 }
 .hero {
-    background-image: IMG_5704.jpg;
+    background-image: "images/IMG_5704.jpg";
     background-size: cover;
     background-position: center;
     height: 50vh; /* altezza intera schermata */
