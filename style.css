@@ -140,3 +140,39 @@ footer {
     color: #f5f5f5;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
+.countdown-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f5f2ed; /* beige chiaro */
+    color: #657362; /* verde tenue */
+}
+
+.countdown-section h2 {
+    font-family: 'Parisienne', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #657362;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#countdown div {
+    background-color: #e0e8e5;
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 80px;
+}
+
+#countdown small {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-top: 0.3rem;
+    color: #49534a;
+}
