@@ -152,8 +152,10 @@ footer {
 .countdown-section {
     text-align: center;
     padding: 3rem 1rem;
+    max-width: device-width;
     background-color: #f5f2ed; /* beige chiaro */
     color: #657362; /* verde tenue */
+    
 }
 
 .countdown-section h2 {
