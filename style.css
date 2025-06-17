@@ -72,7 +72,7 @@ h3 {
 form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: device-width;
     gap: 1rem;
 }
 
@@ -111,7 +111,7 @@ footer {
     background-image: url('images/img9.JPEG');
     background-size: cover;
     background-position: center;
-    height: 100vh; /* altezza intera schermata */
+    height: 90vh; /* altezza intera schermata */
     display: flex;
     align-items: center;
     justify-content: center;
