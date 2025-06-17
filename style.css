@@ -102,7 +102,7 @@ footer {
     background-image: url('images/IMG_5704.jpg');
     background-size: cover;
     background-position: center;
-    height: 50vh; /* altezza intera schermata */
+    height: 100vh; /* altezza intera schermata */
     display: flex;
     align-items: center;
     justify-content: center;
