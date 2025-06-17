@@ -31,6 +31,7 @@ nav ul {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li a {
@@ -46,11 +47,10 @@ nav ul li a:hover {
     background-color: #c5d8e1;  /* celeste polvere */
     color: #ffffff;
 }
-
 main {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
+  padding: 2rem;
+  max-width: 90%;
+  margin: auto;
 }
 
 h2 {
@@ -175,4 +175,25 @@ footer {
     font-weight: normal;
     margin-top: 0.3rem;
     color: #49534a;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome-title {
+    font-size: 2.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
 }
