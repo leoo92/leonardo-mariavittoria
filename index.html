@@ -3,82 +3,63 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home - Leonardo e Maria Vittoria</title>
+    <title>Index - Leonardo e Maria Vittoria</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<header class="hero">
+    <div class="hero-content">
+        <h1>Leonardo e Maria Vittoria</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="storia.html">La nostra storia</a></li>
+                <li><a href="cerimonia.html">Cerimonia e ricevimento</a></li>
+                <li><a href="listanozze.html">Lista nozze</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+<section class="countdown-section">
+  <h2>Save the Date</h2>
+  <div id="countdown">
+    <div><span id="days">00</span><small>Giorni</small></div>
+    <div><span id="hours">00</span><small>Ore</small></div>
+    <div><span id="minutes">00</span><small>Minuti</small></div>
+    <div><span id="seconds">00</span><small>Secondi</small></div>
+  </div>
+</section>
+<script>
+const countdown = () => {
+  const targetDate = new Date("2025-12-14T11:00:00").getTime();
+  const now = new Date().getTime();
+  const distance = targetDate - now;
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Leonardo e Maria Vittoria</h1>
-            <h2>14 Dicembre 2025</h2>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="storia.html">La nostra storia</a></li>
-                    <li><a href="cerimonia.html">Cerimonia e ricevimento</a></li>
-                    <li><a href="listanozze.html">Lista nozze</a></li>
-                    <li><a href="rsvp.html">RSVP</a></li>
-                    <li><a href="contatti.html">Contatti</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  if (distance < 0) {
+    document.getElementById("countdown").innerHTML = "<p>Ci siamo!</p>";
+    return;
+  }
 
-    <!-- Main Content -->
-    <main>
-        <h1 style="text-align: center; font-size: 3rem;">Benvenuti!</h1>
-        <p style="text-align: center;">Ci siamo scelti ogni giorno. Ora scegliamo di farlo per sempre.</p>
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        <!-- Countdown Section -->
-        <section class="countdown-section">
-            <h2>Save the Date</h2>
-            <div id="countdown">
-                <div><span id="days">00</span><small>Giorni</small></div>
-                <div><span id="hours">00</span><small>Ore</small></div>
-                <div><span id="minutes">00</span><small>Minuti</small></div>
-                <div><span id="seconds">00</span><small>Secondi</small></div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Leonardo & Maria Vittoria</p>
-    </footer>
-
-    <!-- Countdown Script -->
-    <script>
-        function updateCountdown() {
-            const targetDate = new Date("2025-12-14T11:00:00").getTime();
-            const now = new Date().getTime();
-            const distance = targetDate - now;
-
-            if (distance < 0) {
-                document.getElementById("countdown").innerHTML = "<p>Ci siamo!</p>";
-                return;
-            }
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("days").innerText = String(days).padStart(2, '0');
-            document.getElementById("hours").innerText = String(hours).padStart(2, '0');
-            document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
-            document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
-        }
-
-        // aggiorna subito, poi ogni secondo
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-    </script>
-
+  document.getElementById("days").innerText = String(days).padStart(2, '0');
+  document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+  document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+  document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+};
+setInterval(countdown, 1000);
+</script>
+</main>
+<footer>
+    <p>&copy; 2025 Leonardo & Maria Vittoria</p>
+</footer>
 </body>
 </html>
