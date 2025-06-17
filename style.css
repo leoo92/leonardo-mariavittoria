@@ -99,10 +99,10 @@ footer {
     font-size: 0.9rem;
 }
 .hero {
-    background-image: url('44ad414f-a179-44d9-ba66-9f8a3c77ad11.png');
+    background-image: IMG_5704.jpg;
     background-size: cover;
     background-position: center;
-    height: 100vh; /* altezza intera schermata */
+    height: 50vh; /* altezza intera schermata */
     display: flex;
     align-items: center;
     justify-content: center;
