@@ -181,7 +181,7 @@ footer {
 }
 
 #countdown small {
-    display: block;
+    display: flex;
     font-size: 0.8rem;
     font-weight: normal;
     margin-top: 0.3rem;
