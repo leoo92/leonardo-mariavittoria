@@ -173,10 +173,12 @@ footer {
     font-weight: bold;
 }
 
-  #countdown div {
-    min-width: 70px;
-    flex: 1 1 40%;
-  }
+#countdown div {
+    background-color: #e0e8e5;
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 80px;
+}
 
 #countdown small {
     font-size: 0.8rem;
