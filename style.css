@@ -173,27 +173,22 @@ footer {
     font-weight: bold;
 }
 
-#countdown div {
-    display: flex;
-    background-color: #e0e8e5;
-    padding: 1rem;
-    border-radius: 10px;
-    min-width: 80px;
-    max-width: device-width;
-}
+  #countdown div {
+    min-width: 70px;
+    flex: 1 1 40%;
+  }
 
 #countdown small {
-    display: flex;
     font-size: 0.8rem;
     font-weight: normal;
     margin-top: 0.3rem;
     color: #49534a;
 }
 
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 480px) {
+  #countdown {
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .welcome-title {
