@@ -171,7 +171,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
     margin: 0 auto;
     max-width: 100%;
@@ -183,7 +183,7 @@ footer {
   background-color: #e0e8e5;
   padding: 1rem;
   border-radius: 10px;
-  min-width: 80px;
+  min-width: 60px;
   text-align: center;         /* centrare testo */
   display: flex;
   flex-direction: column;     /* forza il contenuto su due righe (colonna) */
