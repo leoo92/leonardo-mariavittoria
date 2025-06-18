@@ -170,8 +170,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
-    font-size: 2rem;
+    gap: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin: 0 auto;
     max-width: device-width;
@@ -184,7 +184,8 @@ footer {
   background-color: #e0e8e5;
   padding: 1rem;
   border-radius: 10px;
-  min-width: 80px;
+  min-width: 100px;
+  min-height: 100px;
   max-width: device-width;
   text-align: center;         /* centrare testo */
   display: flex;
