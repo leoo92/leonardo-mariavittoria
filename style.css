@@ -208,7 +208,6 @@ footer {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 auto;
-    max-width: device-width;
     padding: 0 2rem;
     overflow-x: auto; /* Evita che rompa il layout su schermi piccoli */
     box-sizing: border-box;
@@ -217,8 +216,8 @@ footer {
   background-color: #e0e8e5;
   padding: 1rem;
   border-radius: 5px;
-  min-width: 25px;
-  max-width: 30px;
+  min-width: 40px;
+  max-width: 40px;
   text-align: center;         /* centrare testo */
   display: flex;
   flex-direction: column;     /* forza il contenuto su due righe (colonna) */
