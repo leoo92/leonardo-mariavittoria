@@ -180,10 +180,14 @@ footer {
 }
 
 #countdown div {
-    background-color: #e0e8e5;
-    padding: 1rem;
-    border-radius: 10px;
-    min-width: 80px;
+  background-color: #e0e8e5;
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 80px;
+  text-align: center;         /* centrare testo */
+  display: flex;
+  flex-direction: column;     /* forza il contenuto su due righe (colonna) */
+  align-items: center;
 }
 
 #countdown small {
