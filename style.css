@@ -189,7 +189,6 @@ footer {
   display: flex;
   flex-direction: column;     /* forza il contenuto su due righe (colonna) */
   align-items: center;
-  flex: 1 1 auto; /* Consente il ridimensionamento flessibile */
 }
 
 #countdown small {
