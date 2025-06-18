@@ -168,7 +168,7 @@ footer {
 
 #countdown {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 1rem;
     font-size: 2rem;
@@ -189,7 +189,7 @@ footer {
   display: flex;
   flex-direction: column;     /* forza il contenuto su due righe (colonna) */
   align-items: center;
-  flex: 1 1 auto; /* Consente il ridimensionamento flessibile */
+  flex: 0 0 auto; /* Consente il ridimensionamento flessibile */
 }
 
 #countdown small {
