@@ -215,9 +215,9 @@ footer {
   }
 #countdown div {
   background-color: #e0e8e5;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 5px;
-  min-width: 40px;
+  min-width: 30px;
   max-width: device-width;
   text-align: center;         /* centrare testo */
   display: flex;
