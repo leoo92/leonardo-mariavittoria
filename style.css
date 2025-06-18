@@ -185,7 +185,7 @@ footer {
   padding: 1rem;
   border-radius: 10px;
   min-width: 80px;
-  max-width: 80%;
+  max-width: device-width;
   text-align: center;         /* centrare testo */
   display: flex;
   flex-direction: column;     /* forza il contenuto su due righe (colonna) */
@@ -201,17 +201,24 @@ footer {
 
 @media (max-width: 480px) {
   #countdown {
+    display: flex;
     flex-wrap: nowrap;
-    font-size: 1rem;
-    max-width: device-width;
-    overflow-x: auto; /* Evita che rompa il layout su schermi piccoli */
+    justify-content: center;
     gap: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: device-width;
+    padding: 0 2rem;
+    overflow-x: auto; /* Evita che rompa il layout su schermi piccoli */
+    box-sizing: border-box;
   }
 #countdown div {
   background-color: #e0e8e5;
   padding: 1rem;
-  border-radius: auto;
-  min-width: 30px;
+  border-radius: 5px;
+  min-width: 40px;
+  max-width: device-width;
   text-align: center;         /* centrare testo */
   display: flex;
   flex-direction: column;     /* forza il contenuto su due righe (colonna) */
