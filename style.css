@@ -206,7 +206,17 @@ footer {
     overflow-x: auto; /* Evita che rompa il layout su schermi piccoli */
     gap: 1rem;
   }
-
+#countdown div {
+  background-color: #e0e8e5;
+  padding: 1rem;
+  border-radius: auto;
+  min-width: auto;
+  max-width: device-width;
+  text-align: center;         /* centrare testo */
+  display: flex;
+  flex-direction: column;     /* forza il contenuto su due righe (colonna) */
+  align-items: center;
+}
   .welcome-title {
     font-size: 2.5rem;
   }
