@@ -203,7 +203,7 @@ footer {
   #countdown {
     flex-wrap: nowrap;
     font-size: auto;
-    max-width: 80%;
+    max-width: device-width;
     overflow-x: auto; /* Evita che rompa il layout su schermi piccoli */
     gap: 1rem;
   }
@@ -211,8 +211,8 @@ footer {
   background-color: #e0e8e5;
   padding: 1rem;
   border-radius: auto;
-  min-width: auto;
-  max-width: device-width;
+  min-width: 50px;
+  max-width: 80%;
   text-align: center;         /* centrare testo */
   display: flex;
   flex-direction: column;     /* forza il contenuto su due righe (colonna) */
@@ -250,4 +250,15 @@ footer {
   nav ul li a {
     padding: 0.5rem 1rem;
   }
+}
+/* Pulsazione leggera ai numeri */
+#countdown span {
+  display: inline-block;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
