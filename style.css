@@ -174,7 +174,7 @@ footer {
     font-size: 2rem;
     font-weight: bold;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: device-width;
     padding: 0 2rem;
     overflow-x: auto; /* Evita che rompa il layout su schermi piccoli */
     box-sizing: border-box;
@@ -200,7 +200,7 @@ footer {
 
 @media (max-width: 480px) {
   #countdown {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 1rem;
   }
 
