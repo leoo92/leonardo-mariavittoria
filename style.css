@@ -185,6 +185,7 @@ footer {
   padding: 1rem;
   border-radius: 10px;
   min-width: 80px;
+  max-width: 80%;
   text-align: center;         /* centrare testo */
   display: flex;
   flex-direction: column;     /* forza il contenuto su due righe (colonna) */
@@ -201,6 +202,8 @@ footer {
 @media (max-width: 480px) {
   #countdown {
     flex-wrap: nowrap;
+    max-width: device-width;
+    overflow-x: auto; /* Evita che rompa il layout su schermi piccoli */
     gap: 1rem;
   }
 
