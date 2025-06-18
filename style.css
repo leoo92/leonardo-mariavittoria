@@ -202,7 +202,8 @@ footer {
 @media (max-width: 480px) {
   #countdown {
     flex-wrap: nowrap;
-    max-width: device-width;
+    font-size: auto;
+    max-width: 80%;
     overflow-x: auto; /* Evita che rompa il layout su schermi piccoli */
     gap: 1rem;
   }
