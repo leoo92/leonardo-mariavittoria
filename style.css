@@ -174,7 +174,7 @@ footer {
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0 auto;
-    max-width: device-width;
+    max-width: 100%;
     padding: 0 2rem;
     overflow-x: auto; /* Evita che rompa il layout su schermi piccoli */
     box-sizing: border-box;
@@ -182,10 +182,10 @@ footer {
 
 #countdown div {
   background-color: #e0e8e5;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 10px;
   min-width: 100px;
-  max-width: device-width;
+  max-width: 100%;
   text-align: center;         /* centrare testo */
   display: flex;
   flex-direction: column;     /* forza il contenuto su due righe (colonna) */
@@ -208,8 +208,7 @@ footer {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 auto;
-    padding: 0 2rem;
-    overflow-x: auto; /* Evita che rompa il layout su schermi piccoli */
+    padding: 0 1rem;
     box-sizing: border-box;
   }
 #countdown div {
@@ -217,8 +216,7 @@ footer {
   padding: 1rem;
   border-radius: 5px;
   min-width: 25px;
-  max-width: 25px;
-  max-height:30px;
+  max-width: 100%;
   text-align: center;         /* centrare testo */
   display: flex;
   flex-direction: column;     /* forza il contenuto su due righe (colonna) */
