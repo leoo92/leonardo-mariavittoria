@@ -5,28 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cerimonia e ricevimento - Leonardo e Maria Vittoria</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
         <h1>Leonardo e Maria Vittoria</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li><li><a href="storia.html">La nostra storia</a></li><li><a href="cerimonia.html">Cerimonia e ricevimento</a></li><li><a href="listanozze.html">Lista nozze</a></li><li><a href="rsvp.html">RSVP</a></li><li><a href="contatti.html">Contatti</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="storia.html">La nostra storia</a></li>
+                <li><a href="cerimonia.html">Cerimonia e ricevimento</a></li>
+                <li><a href="listanozze.html">Lista nozze</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        
-            <h3>Cerimonia e ricevimento</h3>
-            <p>La cerimonia e il ricevimento si terranno presso <strong>Posta dei Donini (PG)</strong> il 14 dicembre 2025.</p>
-        
+
+    <main class="cerimonia">
+        <h3>Cerimonia e Ricevimento</h3>
+        <p>La cerimonia e il ricevimento si terranno presso <strong>Posta dei Donini (PG)</strong> il 14 dicembre 2025.</p>
+
+        <!-- Mappa -->
+        <section class="mappa">
+            <h4>Location</h4>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.1432713882466!2d12.442801415389284!3d43.0044470791488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132d93f867fbd447%3A0xa2ef0c25bd9b2a8!2sPosta%20dei%20Donini!5e0!3m2!1sit!2sit!4v1620000000000"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+
+        <!-- Meteo -->
+        <section class="meteo">
+            <h4>Meteo previsto</h4>
+            <a class="weatherwidget-io" href="https://forecast7.com/it/43d06n12d52/perugia/"
+               data-label_1="PERUGIA" data-label_2="Meteo" data-theme="pure">PERUGIA Meteo</a>
+        </section>
+
+        <!-- Celebranti e Testimoni -->
+        <section class="persone">
+            <h4>Celebranti e Testimoni</h4>
+            <div class="grid">
+                <div class="persona">
+                    <h5>Celebrante</h5>
+                    <p>La cerimonia sarà celebrata da Don Marco, parroco della chiesa di San Martino in Campo, che ci conosce da tempo e ci accompagnerà in questo momento speciale.</p>
+                </div>
+                <div class="persona">
+                    <h5>Testimoni di Leonardo</h5>
+                    <ul>
+                        <li>Francesco Rossi</li>
+                        <li>Giorgio Bianchi</li>
+                    </ul>
+                </div>
+                <div class="persona">
+                    <h5>Testimoni di Maria Vittoria</h5>
+                    <ul>
+                        <li>Alessia Verdi</li>
+                        <li>Sara Neri</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Leonardo & Maria Vittoria</p>
     </footer>
+
+    <!-- Script meteo -->
+    <script>
+        !function(d,s,id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if(!d.getElementById(id)){
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://weatherwidget.io/js/widget.min.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document,'script','weatherwidget-io-js');
+    </script>
 </body>
 </html>
