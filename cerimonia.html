@@ -42,16 +42,15 @@
         </section>
 
         <!-- Meteo -->
-        <section class="meteo">
-            <h4>Meteo previsto</h4>
-            <a class="weatherwidget-io" 
-                href="https://forecast7.com/it/43d06n12d52/perugia/"
-                data-label_1="PERUGIA" 
-                data-label_2="Meteo" 
-                data-theme="pure">
-                PERUGIA Meteo
-            </a>
-        </section>
+        <a class="weatherwidget-io" 
+           href="https://forecast7.com/it/43d06n12d52/perugia/"
+           data-label_1="PERUGIA" 
+           data-label_2="Meteo" 
+           data-theme="pure">
+           PERUGIA Meteo
+        </a>
+
+        <script id="weatherwidget-io-js" src="https://weatherwidget.io/js/widget.min.js"></script>
 
         <!-- Celebranti e Testimoni -->
         <section class="persone">
@@ -82,32 +81,6 @@
     <footer>
         <p>&copy; 2025 Leonardo & Maria Vittoria</p>
     </footer>
-
-    <!-- Script meteo -->
-   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const widgetScriptId = 'weatherwidget-io-js';
-    const widgetEl = document.querySelector('.weatherwidget-io');
-
-    if (widgetEl) {
-      if (!document.getElementById(widgetScriptId)) {
-        const script = document.createElement("script");
-        script.id = widgetScriptId;
-        script.src = "https://weatherwidget.io/js/widget.min.js";
-        script.onload = function () {
-          if (window.__weatherwidget_init) {
-            window.__weatherwidget_init();
-          }
-        };
-        document.body.appendChild(script);
-      } else if (window.__weatherwidget_init) {
-        window.__weatherwidget_init();
-      }
-    } else {
-      console.warn("Weather widget element not found.");
-    }
-  });
-</script>
 
 </body>
 </html>
