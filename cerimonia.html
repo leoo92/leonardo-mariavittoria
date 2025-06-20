@@ -84,16 +84,27 @@
     </footer>
 
     <!-- Script meteo -->
-    <script>
+   <script>
   document.addEventListener("DOMContentLoaded", function () {
     const widgetScriptId = 'weatherwidget-io-js';
-    if (!document.getElementById(widgetScriptId)) {
-      const script = document.createElement("script");
-      script.id = widgetScriptId;
-      script.src = "https://weatherwidget.io/js/widget.min.js";
-      document.body.appendChild(script);
-    } else if (window.__weatherwidget_init) {
-      window.__weatherwidget_init();
+    const widgetEl = document.querySelector('.weatherwidget-io');
+
+    if (widgetEl) {
+      if (!document.getElementById(widgetScriptId)) {
+        const script = document.createElement("script");
+        script.id = widgetScriptId;
+        script.src = "https://weatherwidget.io/js/widget.min.js";
+        script.onload = function () {
+          if (window.__weatherwidget_init) {
+            window.__weatherwidget_init();
+          }
+        };
+        document.body.appendChild(script);
+      } else if (window.__weatherwidget_init) {
+        window.__weatherwidget_init();
+      }
+    } else {
+      console.warn("Weather widget element not found.");
     }
   });
 </script>
