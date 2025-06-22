@@ -293,7 +293,43 @@ footer {
   border-radius: 8px;
   box-shadow: 0 1px 5px rgba(0,0,0,0.05);
 }
+.ritratti {
+  margin-top: 3rem;
+  text-align: center;
+}
 
+.celebranti {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimoni {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.gruppo {
+  max-width: 300px;
+  text-align: center;
+}
+
+.persona {
+  margin-bottom: 1.5rem;
+}
+
+.ritratto {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #cde0d6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
+}
 @media (min-width: 768px) {
   .persone .grid {
     grid-template-columns: 1fr 1fr;
