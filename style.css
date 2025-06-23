@@ -315,10 +315,12 @@ footer {
 
 .testimoni {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
+  /*flex-wrap: wrap; */
   gap: 2rem;
+  margin-bottom: 2rem;
 }
+
 .testimoni .persona {
   flex: 0 0 45%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
   display: flex;
