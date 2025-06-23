@@ -322,8 +322,8 @@ footer {
 }
 
 .testimoni .persona {
-  flex: 0 0 50%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
-  min-height: 220px; /* o quanto serve per uniformare l’altezza */
+  flex: 0 0 55%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
+  min-height: 250px; /* o quanto serve per uniformare l’altezza */
   display: flex;
   flex-direction: column;
   align-items: center;
