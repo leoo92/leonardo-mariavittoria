@@ -316,7 +316,7 @@ footer {
 .testimoni {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -328,7 +328,7 @@ footer {
   align-items: center;
 }
 .gruppo {
-  max-width: 300px;
+  flex: 0 0 45%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
   text-align: center;
 }
 
