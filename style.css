@@ -316,10 +316,14 @@ footer {
 
 .testimoni {
   display: flex;
-  justify-content: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 2rem;
-  margin-bottom: 2rem;
+}
+
+.colonna {
+  flex: 1 1 45%; /* 2 colonne affiancate finché c'è spazio */
+  min-width: 160px;
 }
 
 .testimoni .persona {
