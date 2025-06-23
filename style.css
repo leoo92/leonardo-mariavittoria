@@ -1,184 +1,172 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f7;      /* panna chiarissimo */
-    color: #5e6f64;                 /* grigio-verde elegante */
-    margin: 0;
-    padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f7;
+  color: #5e6f64;
+  margin: 0;
+  padding: 0;
 }
 
-
 header {
-    background: linear-gradient(90deg, #cdded5, #e7f0eb); /* sfumatura salvia chiaro */
-    color: #3f4f47;
-    padding: 1.5rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  background: linear-gradient(90deg, #cdded5, #e7f0eb);
+  color: #3f4f47;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 header h1 {
-    font-family: 'Parisienne', cursive;
-    font-size: 3rem;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px rgba(180, 190, 180, 0.5);
+  font-family: 'Parisienne', cursive;
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(180, 190, 180, 0.5);
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #5e6f64;
-    font-weight: 600;
-    padding: 0.5rem 0.9rem;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: #5e6f64;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #c5d8e1;  /* celeste polvere */
-    color: #ffffff;
+  background-color: #c5d8e1;
+  color: #ffffff;
 }
+
 main {
   padding: 2rem;
-  max-width: device-width;
   margin: auto;
 }
 
-h2 {
-    font-family: 'Parisienne', cursive;
-    color: #ffffff;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 2px rgba(190, 200, 190, 0.4);
+h2, h3 {
+  font-family: 'Parisienne', cursive;
+  color: #5e6f64;
+  text-shadow: 1px 1px 2px rgba(190, 200, 190, 0.4);
+  margin-bottom: 1rem;
 }
 
 h3 {
-    font-family: 'Parisienne', cursive;
-    font-size: 2rem;
-    color: #5e6f64;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 2px rgba(190, 200, 190, 0.4);
+  font-size: 2rem;
 }
 
-
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: device-width;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 input[type="text"],
 input[type="number"] {
-    padding: 0.6rem;
-    border: 1px solid #cfded9;
-    border-radius: 6px;
-    background-color: #ffffff;
+  padding: 0.6rem;
+  border: 1px solid #cfded9;
+  border-radius: 6px;
+  background-color: #ffffff;
 }
 
 input[type="submit"] {
-    background-color: #c5d8e1;    /* celeste polvere */
-    color: #ffffff;
-    border: none;
-    padding: 0.8rem;
-    border-radius: 6px;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(150, 170, 180, 0.4);
-    transition: background-color 0.3s ease;
+  background-color: #c5d8e1;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(150, 170, 180, 0.4);
+  transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: #b1cbd9;
+  background-color: #b1cbd9;
 }
 
 footer {
-    text-align: center;
-    background-color: #e3ece8;    /* salvia molto chiaro */
-    color: #5e6f64;
-    padding: 1.5rem;
-    margin-top: 3rem;
-    font-size: 0.9rem;
+  text-align: center;
+  background-color: #e3ece8;
+  color: #5e6f64;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
 }
+
 .hero {
-    background-image: url('images/img9.JPEG');
-    background-size: cover;
-    background-position: center;
-    height: 87vh; /* altezza intera schermata */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
+  background-image: url('images/img9.JPEG');
+  background-size: cover;
+  background-position: center;
+  height: 87vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
 }
 
 .hero::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* sfumatura scura */
-    z-index: 1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 90%;
-    padding: 2rem;
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  padding: 2rem;
 }
 
 .hero h1 {
-    font-family: 'Parisienne', cursive;
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  font-family: 'Parisienne', cursive;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .hero p {
-    font-size: 1.4rem;
-    color: #f5f5f5;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  font-size: 1.4rem;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .countdown-section {
-    text-align: center;
-    padding: 3rem 1rem;
-    max-width: device-width;
-    background-color: #f5f2ed; /* beige chiaro */
-    color: #657362; /* verde tenue */
-    
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f5f2ed;
+  color: #657362;
 }
 
 .countdown-section h2 {
-    font-family: 'Parisienne', cursive;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #657362;
+  font-size: 2rem;
+  color: #657362;
 }
 
 #countdown {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0 auto;
-    max-width: 100%;
-    padding: 0 2rem;
-    overflow-x: auto; /* Evita che rompa il layout su schermi piccoli */
-    box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow-x: auto;
+  box-sizing: border-box;
 }
 
 #countdown div {
@@ -186,43 +174,30 @@ footer {
   padding: 3rem;
   border-radius: 10px;
   min-width: 100px;
-  max-width: 100%;
-  text-align: center;         /* centrare testo */
+  text-align: center;
   display: flex;
-  flex-direction: column;     /* forza il contenuto su due righe (colonna) */
+  flex-direction: column;
   align-items: center;
 }
 
 #countdown small {
-    font-size: 0.8rem;
-    font-weight: normal;
-    margin-top: 0.3rem;
-    color: #49534a;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  color: #49534a;
 }
 
 @media (max-width: 480px) {
   #countdown {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
     gap: 0.5rem;
     font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0 auto;
     padding: 0 1rem;
-    box-sizing: border-box;
   }
+
   #countdown div {
-    background-color: #e0e8e5;
     padding: 0.5rem;
-    border-radius: 10px;
     min-width: 50px;
-    max-width: 100%;
-    text-align: center;         /* centrare testo */
-    display: flex;
-    flex-direction: column;     /* forza il contenuto su due righe (colonna) */
-    align-items: center;
   }
+
   .welcome-title {
     font-size: 2.5rem;
   }
@@ -236,18 +211,25 @@ footer {
   main {
     padding: 1rem;
   }
+
+  .testimoni {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .colonna {
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
   nav ul {
     flex-direction: column;
-    align-items: center;
     gap: 0.5rem;
     margin-top: 1rem;
   }
@@ -255,10 +237,13 @@ footer {
   nav ul li a {
     padding: 0.5rem 1rem;
   }
+
+  .testimoni {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-
-/* Pulsazione leggera ai numeri */
 #countdown span {
   display: inline-block;
   animation: pulse 1s ease-in-out infinite;
@@ -285,8 +270,7 @@ footer {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1fr 1fr;
-  margin-top: 1rem;
-  margin-bottom: 1rem
+  margin: 1rem 0;
 }
 
 .persona {
@@ -294,7 +278,9 @@ footer {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
 }
+
 .ritratti {
   margin-top: 3rem;
   text-align: center;
@@ -307,8 +293,11 @@ footer {
   margin-bottom: 2rem;
 }
 
-.celebranti .persona {
-  flex: 0 0 45%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
+.celebranti .persona,
+.testimoni .persona,
+.gruppo {
+  flex: 0 0 45%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,35 +309,6 @@ footer {
   gap: 1rem;
 }
 
-@media (max-width: 480px) {
-  .testimoni {
-    grid-template-columns: 1fr 1fr; /* mantiene due colonne anche su schermi piccoli */
-  }
-
-  .colonna {
-    padding: 0 0.5rem;
-    font-size: 0.9rem; /* riduce leggermente il testo */
-  }
-}
-.testimoni .persona {
-  flex: 0 45% 45%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
-  min-height: 300px; /* o quanto serve per uniformare l’altezza */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  margin: 2rem auto;
-}
-.gruppo {
-  flex: 0 45% 45%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
-  text-align: center;
-}
-
-.persona {
-  margin-bottom: 1.5rem;
-}
-
 .ritratto {
   width: 120px;
   height: 120px;
@@ -358,16 +318,9 @@ footer {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 0.5rem;
 }
+
 @media (min-width: 768px) {
   .persone .grid {
     grid-template-columns: 1fr 1fr;
-    flex: 0 45% 45%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
-    margin: 2rem auto;  
-  }
-}
-@media (max-width: 768px) {
-  .testimoni {
-    flex-direction: column;
-    align-items: center;
   }
 }
