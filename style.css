@@ -315,17 +315,21 @@ footer {
 }
 
 .testimoni {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
-.colonna {
-  flex: 1 1 45%; /* 2 colonne affiancate finché c'è spazio */
-  min-width: 160px;
-}
+@media (max-width: 480px) {
+  .testimoni {
+    grid-template-columns: 1fr 1fr; /* mantiene due colonne anche su schermi piccoli */
+  }
 
+  .colonna {
+    padding: 0 0.5rem;
+    font-size: 0.9rem; /* riduce leggermente il testo */
+  }
+}
 .testimoni .persona {
   flex: 0 45% 45%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
   min-height: 300px; /* o quanto serve per uniformare l’altezza */
