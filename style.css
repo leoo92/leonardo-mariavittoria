@@ -286,6 +286,7 @@ footer {
   gap: 1.5rem;
   grid-template-columns: 1fr 1fr;
   margin-top: 1rem;
+  margin-bottom: 1rem
 }
 
 .persona {
@@ -322,14 +323,14 @@ footer {
 }
 
 .testimoni .persona {
-  flex: 0 0 55%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
-  min-height: 250px; /* o quanto serve per uniformare l’altezza */
+  flex: 0 0 100%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
+  min-height: 300px; /* o quanto serve per uniformare l’altezza */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 .gruppo {
   flex: 0 0 45%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
