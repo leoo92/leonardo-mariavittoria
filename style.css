@@ -323,7 +323,7 @@ footer {
 }
 
 .testimoni .persona {
-  flex: 0 0 45%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
+  flex: 0 45% 45%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
   min-height: 300px; /* o quanto serve per uniformare l’altezza */
   display: flex;
   flex-direction: column;
@@ -333,7 +333,7 @@ footer {
   margin: 2rem auto;
 }
 .gruppo {
-  flex: 0 0 45%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
+  flex: 0 45% 45%; /* Ogni riquadro occuperà il 45% della larghezza, lasciando spazio per il gap */
   text-align: center;
 }
 
