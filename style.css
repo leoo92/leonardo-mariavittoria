@@ -357,3 +357,9 @@ footer {
     margin: 2rem auto;  
   }
 }
+@media (max-width: 768px) {
+  .testimoni {
+    flex-direction: column;
+    align-items: center;
+  }
+}
