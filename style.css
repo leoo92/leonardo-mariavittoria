@@ -291,6 +291,7 @@ footer {
 .persona {
   background-color: #f0f4f2;
   padding: 1rem;
+  max-width: 50%;
   border-radius: 8px;
   box-shadow: 0 1px 5px rgba(0,0,0,0.05);
 }
@@ -302,7 +303,6 @@ footer {
 .celebranti {
   display: flex;
   justify-content: center;
-  max-width: 50%;
   gap: 2rem;
   margin-bottom: 2rem;
 }
