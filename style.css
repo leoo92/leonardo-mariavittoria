@@ -439,6 +439,8 @@ footer {
     transform: translateY(0);
   }
 }
+
+/* ===== Timeline ===== */
 .timeline {
   background-color: #f0f4f2;
   padding: 2rem;
