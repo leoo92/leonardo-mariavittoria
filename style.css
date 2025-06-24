@@ -113,7 +113,7 @@ footer {
 .hero {
   background-image: url('images/bacio.jpg');
   background-size: cover;
-  background-position: 50% 80%;
+  background-position: 40% 40%;
   height: 85vh; /* Full screen height */
   display: flex;
   align-items: center;
