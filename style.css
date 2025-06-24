@@ -153,61 +153,59 @@ footer {
 }
 
 /* ===== Countdown Section ===== */
-.countdown {
+.countdown-section {
   text-align: center;
-  padding: 2rem 1rem;
-  background-color: #f0f4f2;
-  border-radius: 12px;
-  max-width: 700px;
-  margin: 2rem auto;
+  padding: 3rem 1rem;
+  background-color: #f5f2ed;
+  color: #657362;
 }
 
-.timer {
+.countdown-section h2 {
+  font-size: 2rem;
+  color: #657362;
+}
+
+#countdown {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow-x: auto;
+  box-sizing: border-box;
 }
 
-.time-segment {
+#countdown div {
+  background-color: #e0e8e5;
+  padding: 3rem;
+  border-radius: 10px;
+  min-width: 100px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.flip-card {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 1rem 1.2rem;
-  font-size: 2rem;
-  font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.6s ease-in-out;
-  perspective: 1000px;
+#countdown small {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  color: #49534a;
 }
 
-.flip-card span {
+#countdown span {
   display: inline-block;
-  transform-origin: bottom;
-  animation: flip 1s ease-in-out forwards;
+  animation: pulse 1s ease-in-out infinite; /* Animated effect */
 }
 
-@keyframes flip {
-  0% {
-    transform: rotateX(0);
-  }
-  50% {
-    transform: rotateX(-90deg);
-  }
-  100% {
-    transform: rotateX(0);
-  }
-}
-
-label {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #666;
+@keyframes pulse {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.25); }
+  50% { transform: scale(1.50); }
+  75% { transform: scale(1.25); }
+  100% { transform: scale(1); }
 }
 
 /* ===== Ceremony Map Section ===== */
