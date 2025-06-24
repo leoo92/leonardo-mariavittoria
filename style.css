@@ -299,7 +299,8 @@ footer {
     gap: 0.5rem;
   }
 .hero {
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   height: 100vh;
 }
   main {
