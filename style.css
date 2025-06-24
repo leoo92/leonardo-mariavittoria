@@ -259,7 +259,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin: 2rem 1rem;
+  margin: 2rem 2rem;
 }
 
 .ritratto {
@@ -328,13 +328,13 @@ footer {
   .testimoni {
     flex-direction: column;
    /* align-items: center; */
-    margin: 2rem 1rem;
+    margin: 2rem 2rem;
   }
 }
 
 @media (min-width: 768px) {
   .persone .grid {
     grid-template-columns: 1fr 1fr;
-    margin: 2rem 1rem;
+    margin: 2rem 2rem;
   }
 }
