@@ -112,7 +112,7 @@ footer {
 /* ===== Hero Section (Top Banner) ===== */
 .hero {
   background-image: url('images/bacio.jpg');
-  background-size: cover;
+  background-size: 100% auto;
   background-position: 40% 40%;
   height: 85vh; /* Full screen height */
   display: flex;
