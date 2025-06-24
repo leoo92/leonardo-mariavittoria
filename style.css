@@ -259,8 +259,8 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  gap: 1rem;
-  margin: 2rem 2rem;
+  gap: 2rem;
+  margin: 2rem 1rem;
 }
 
 .ritratto {
