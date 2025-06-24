@@ -298,7 +298,9 @@ footer {
     align-items: center;
     gap: 0.5rem;
   }
-
+.hero {
+  background-size: contain;
+}
   main {
     padding: 1rem;
   }
