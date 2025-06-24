@@ -339,3 +339,37 @@ footer {
     margin: 1rem 1rem;
   }
 }
+
+
+/* ===== Contact Page Styling ===== */
+.contatto {
+  background-color: #f0f4f2;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.contatto h4 {
+  font-size: 1.5rem;
+  color: #5e6f64;
+  margin-bottom: 0.5rem;
+}
+
+.contatto a {
+  display: block;
+  color: #3f4f47;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  transition: color 0.3s ease;
+}
+
+.contatto a:hover {
+  color: #6ea6b7;
+  text-decoration: underline;
+}
