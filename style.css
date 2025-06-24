@@ -300,6 +300,7 @@ footer {
   }
 .hero {
   background-size: contain;
+  height: 100vh;
 }
   main {
     padding: 1rem;
