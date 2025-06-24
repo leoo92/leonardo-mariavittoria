@@ -65,31 +65,43 @@
 
     <!-- Countdown Script -->
     <script>
-        function updateCountdown() {
-            const targetDate = new Date("2025-12-14T11:00:00").getTime();
-            const now = new Date().getTime();
-            const distance = targetDate - now;
+  const weddingDate = new Date("2025-12-14T11:00:00").getTime();
 
-            if (distance < 0) {
-                document.getElementById("countdown").innerHTML = "<p>Ci siamo!</p>";
-                return;
-            }
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    if (distance < 0) return;
 
-            document.getElementById("days").innerText = String(days).padStart(2, '0');
-            document.getElementById("hours").innerText = String(hours).padStart(2, '0');
-            document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
-            document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
-        }
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((distance / (1000 * 60)) % 60);
+    const seconds = Math.floor((distance / 1000) % 60);
 
-        // aggiorna subito, poi ogni secondo
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-    </script>
+    flipTo("days", days);
+    flipTo("hours", hours);
+    flipTo("minutes", minutes);
+    flipTo("seconds", seconds);
+  }
+
+  function flipTo(id, newValue) {
+    const element = document.getElementById(id).querySelector("span");
+    const current = element.textContent;
+
+    const formatted = String(newValue).padStart(2, "0");
+
+    if (current !== formatted) {
+      element.textContent = formatted;
+      element.style.animation = "none";
+      void element.offsetWidth; // reset animation
+      element.style.animation = null;
+    }
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+
 
 </body>
 </html>
