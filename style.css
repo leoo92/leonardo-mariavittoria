@@ -329,13 +329,13 @@ footer {
   .testimoni {
     flex-direction: column;
    /* align-items: center; */
-    margin: 2rem 2rem;
+    margin: 2rem 1rem;
   }
 }
 
 @media (min-width: 768px) {
   .persone .grid {
     grid-template-columns: 1fr 1fr;
-    margin: 2rem 2rem;
+    margin: 1rem 1rem;
   }
 }
