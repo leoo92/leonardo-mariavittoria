@@ -180,9 +180,9 @@ footer {
 
 #countdown div {
   background-color: #e0e8e5;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 10px;
-  min-width: 100px;
+  min-width: 80px;
   text-align: center;
   display: flex;
   flex-direction: column;
