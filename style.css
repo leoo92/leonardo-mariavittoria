@@ -258,6 +258,7 @@ footer {
 .testimoni {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
   gap: 1rem;
   margin: 2rem 2rem;
 }
