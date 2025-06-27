@@ -497,8 +497,9 @@ footer {
 
 .timeline-container {
   position: relative;
-  margin-left: 20px;
-  padding-left: 20px;
+  margin: 0 auto;         /* Centro orizzontalmente */
+  padding-left: 40px;     /* Spazio per la linea della timeline */
+  max-width: 600px;       /* Limita la larghezza se vuoi */
 }
 
 .timeline-container::before {
