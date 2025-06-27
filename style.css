@@ -157,6 +157,16 @@ footer {
   color: #f5f5f5;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
+.titolo-home {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.riga-mobile {
+  white-space: nowrap; /* non va mai a capo */
+}
+
 
 /* ===== Countdown Section ===== */
 .countdown-section {
@@ -322,6 +332,11 @@ footer {
   max-width: 100%;
   padding: 0rem;
 }
+  .riga-mobile::before {
+    content: "\A";       /* aggiunge un line break */
+    white-space: pre;    /* interpreta \A come newline */
+}
+  
   main {
     padding: 1rem;
   }
