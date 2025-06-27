@@ -499,7 +499,7 @@ footer {
   position: relative;
   margin: 0 auto;         /* Centro orizzontalmente */
   padding-left: 40px;     /* Spazio per la linea della timeline */
-  max-width: 600px;       /* Limita la larghezza se vuoi */
+  max-width: 400px;       /* Limita la larghezza se vuoi */
 }
 
 .timeline-container::before {
